@@ -9,5 +9,7 @@ def print_output(string):
 def load_file(filename):
     with open(filename,'r') as f:
         lines = f.readlines()
+        for i in lines:
+            i = i.replace('\n','')
         print('OUTPUT',lines)
 

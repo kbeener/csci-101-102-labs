@@ -20,6 +20,7 @@ def update_string(string1,string2,indexint):
         stringchar.append(char)
     stringchar[indexint] = string2
     outputstr = ''.join(stringchar)
+    print('OUTPUT', outputstr)
     #are we supposed to call print_ouput or just print the output
     #return print_output(outputstr)
 

@@ -20,4 +20,14 @@ def update_string(string1,string2,indexint):
         stringchar.append(char)
     stringchar[indexint] = string2
     outputstr = ''.join(stringchar)
-    print('OUTPUT', outputstr)
+    print_output(outputstr)
+
+def find_word_count(input_list,word):
+    count = 0
+    for i in input_list:
+        for j in i:
+            if j == word:
+                count += 1
+    return count
+            
+    

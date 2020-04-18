@@ -19,6 +19,5 @@ def update_string(string1,string2,indexint):
     for char in string1:
         stringchar.append(char)
     stringchar[indexint] = string2
-    outputstr = ''
-    outputstr.join(stringchar)
-    print(outputstr)
+    outputstr = ''.join(stringchar)
+    print('OUTPUT', outputstr)

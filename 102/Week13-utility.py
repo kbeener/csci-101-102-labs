@@ -37,9 +37,12 @@ def find_word_count(input_list,word):
 
 
 def score_finder(list1,list2,string):
-   for i in range(len(list1)):
-       if list1[i].lower() == string.lower():
-           stroutput = list1[i] + ' got a score of ' + str(list2[i])
-           print('OUTPUT',stroutput)
-           #return print_output(stroutput)
+    for i in range(len(list1)):
+        if list1[i].lower() == string.lower():
+            stroutput = list1[i] + ' got a score of ' + str(list2[i])
+        else:
+            stroutput = 'player not found'
+    print('OUTPUT',stroutput)
+    #return print_output(stroutput)??
+           
     

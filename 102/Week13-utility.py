@@ -14,4 +14,11 @@ def load_file(filename):
     return lines
 
     
-
+def update_string(string1,string2,indexint):
+    stringchar = []
+    for char in string1:
+        stringchar.append(char)
+    stringchar[indexint] = string2
+    outputstr = ''
+    outputstr.join(stringchar)
+    print(outputstr)

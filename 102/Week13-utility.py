@@ -61,4 +61,12 @@ def intersect(list1,list2):
         if i in list2:
             duplicates.append(i)
     return duplicates
-    
+
+
+def not_in(list1,list2):
+    not_duplicates = []
+    for i in list1:
+        if i not in list2:
+            not_duplicates.append(i)
+    return not_duplicates
+

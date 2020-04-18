@@ -20,7 +20,9 @@ def update_string(string1,string2,indexint):
         stringchar.append(char)
     stringchar[indexint] = string2
     outputstr = ''.join(stringchar)
-    print_output(outputstr)
+    #are we supposed to call print_ouput or just print the output
+    #return print_output(outputstr)
+
 
 def find_word_count(input_list,word):
     count = 0
@@ -32,5 +34,12 @@ def find_word_count(input_list,word):
             if newwords == word:
                 count += 1
     return count
-            
+
+
+def score_finder(list1,list2,string):
+   for i in range(len(list1)):
+       if list1[i].lower() == string.lower():
+           stroutput = list1[i] + ' got a score of ' + str(list2[i])
+           print('OUTPUT',stroutput)
+           #return print_output(stroutput)
     

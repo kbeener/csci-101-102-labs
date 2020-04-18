@@ -56,10 +56,9 @@ def union(list1,list2):
 
 
 def intersect(list1,list2):
-    newlist = list1 + list2
     duplicates = []
-    for i in newlist:
-        if i in (list1 and list2):
+    for i in list1:
+        if i in list2:
             duplicates.append(i)
-    return duplcates
+    return duplicates
     

@@ -11,5 +11,7 @@ def load_file(filename):
         lines = f.readlines()
         for i in range(len(lines)):
             lines[i] = lines[i].replace('\n','')
-        print('OUTPUT',lines)
+    return lines
+
+    
 

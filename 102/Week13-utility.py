@@ -4,4 +4,10 @@
 
 def print_output(string):
     output = print(f'OUTPUT {string}')
-    
+
+
+def load_file(filename):
+    with open(filename,'r') as f:
+        lines = f.readlines()
+        print('OUTPUT',lines)
+

@@ -24,9 +24,12 @@ def update_string(string1,string2,indexint):
 
 def find_word_count(input_list,word):
     count = 0
+    words = []
     for i in input_list:
-        for j in i:
-            if j == word:
+        words.append(i.split())
+    for i in words:
+        for newwords in i:
+            if newwords == word:
                 count += 1
     return count
             

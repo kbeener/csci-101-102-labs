@@ -46,3 +46,20 @@ def score_finder(list1,list2,string):
     #return print_output(stroutput)??
            
     
+def union(list1,list2):
+    newlist = list1 + list2
+    no_duplicates = []
+    for i in newlist:
+        if i not in no_duplicates:
+            no_duplicates.append(i)
+    return no_duplicates
+
+
+def intersect(list1,list2):
+    newlist = list1 + list2
+    duplicates = []
+    for i in newlist:
+        if i in (list1 and list2):
+            duplicates.append(i)
+    return duplcates
+    
